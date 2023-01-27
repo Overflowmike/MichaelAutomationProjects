@@ -28,6 +28,38 @@ def main():
     time.sleep(3)
     log_in_button.find_element(By.XPATH, '//*[@id="login-button"]').click()
     time.sleep(4)
+
+    # Add 5 Items to Cart
+    add_sauce_labsBackPack_button = driver.find_element(By.NAME, 'add-to-cart-sauce-labs-backpack')
+    add_sauce_labsBackPack_button.find_element(By.NAME, 'add-to-cart-sauce-labs-backpack').click()
+    time.sleep(3)
+    add_sauce_labsBikeLight_button = driver.find_element(By.NAME, 'add-to-cart-sauce-labs-bike-light')
+    add_sauce_labsBikeLight_button.find_element(By.NAME, 'add-to-cart-sauce-labs-bike-light').click()
+    time.sleep(3)
+    add_sauce_labsBoltTshit_button = driver.find_element(By.NAME, 'add-to-cart-sauce-labs-bolt-t-shirt')
+    add_sauce_labsBoltTshit_button.find_element(By.Name, 'add-to-cart-sauce-labs-bolt-t-shirt').click()
+    time.sleep(3)
+    add_sauce_labsOnesie_button = driver.find_element(By.NAME, 'add-to-cart-sauce-labs-onesie')
+    add_sauce_labsOnesie_button.find_element(By.NAME, 'add-to-cart-sauce-labs-onesie').click()
+    add_sauce_labsFleeceJacket_button = driver.find_element(By.NAME, 'add-to-cart-sauce-labs-fleece-jacket')
+    add_sauce_labsFleeceJacket_button.find_element(By.NAME, 'add-to-cart-sauce-labs-fleece-jacket').click()
+
+    # Click on Cart Menu
+    Cart_buttonMenu = driver.find_element(By.CLASS_NAME, 'shopping_cart_link')
+    Cart_buttonMenu.find_element(By.CLASS_NAME, 'shopping_cart_link').click()
+
+    # Remove Items 1,3 & 5
+    remove_sauce_labsBackPack_button = driver.find_element(By.NAME, 'remove-sauce-labs-backpack')
+    remove_sauce_labsBackPack_button.find_element(By.NAME, 'remove-sauce-labs-backpack').click()
+    time.sleep(3)
+    remove_sauce_labsBoltTshit_button = driver.find_element(By.NAME, 'remove-sauce-labs-bolt-t-shirt')
+    remove_sauce_labsBoltTshit_button.find_element(By.NAME, 'remove-sauce-labs-bolt-t-shirt').click()
+    time.sleep(3)
+    remove_sauce_labsFleeceJacket_button = driver.find_element(By.NAME, 'remove-sauce-labs-fleece-jacket')
+    remove_sauce_labsFleeceJacket_button.find_element(By.NAME, 'remove-sauce-labs-fleece-jacket').click()
+
+    # Add Two more items
+    Add 
     driver.close()
 
 if __name__ == '__main__':
